@@ -12,11 +12,10 @@ html {
 nav {
     height: 80px;
     background-color: darkgrey;
-    width: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 0rem calc((100vw - 1300px) / 2);
 }
 
 .logo {
@@ -34,7 +33,7 @@ nav a {
 }
 
 .hero {
-    background-image: linear-gradient(rgb(117, 117, 117), darkgrey);
+    background-color: darkgray;
 }
 
 .hero-container {
@@ -67,6 +66,6 @@ nav a {
 button {
     padding: 1rem 3rem;
     font-size: 1rem;
-    border: 1px;
+    border: none;
     color: darkgrey
 }
