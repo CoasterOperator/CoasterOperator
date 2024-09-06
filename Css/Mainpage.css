@@ -13,11 +13,10 @@ nav {
     height: 80px;
     background-color: darkgrey;
     width: 200px;
-    border-radius: 15px 50px 30px 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem calc((100vw - 1300px) / 2);
+    padding: 30px 10%;
 }
 
 .logo {
