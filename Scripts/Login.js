@@ -10,5 +10,10 @@ if (localStorage.getItem("users") != null) {
 
 
 function Login() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
 
+    if (username == "Admin" && password == "123") {
+        window.location.href = "cool";
+    }
 }
