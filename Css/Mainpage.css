@@ -12,7 +12,8 @@ html {
 nav {
     height: 80px;
     background-color: darkgrey;
-    width: 100px;
+    width: 200px;
+    border-radius: 15px 50px 30px 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
