@@ -33,7 +33,7 @@ nav a {
 }
 
 .hero {
-    background-color: darkgray;
+    background-image: linear-gradient(rgb(117, 117, 117), darkgrey);
 }
 
 .hero-container {
