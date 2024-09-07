@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(#424949, #4d5656);
+    background: linear-gradient(#5b6363, #6f7979);
 }
 
 nav {
@@ -43,5 +43,6 @@ nav span {
     left: 0;
     width: 95px;
     height: 100%;
-    background:linear-gradient(45deg, #d7d7d7, #fff);
+    background:linear-gradient(45deg, #2d3131, #3f3f3f);
+    border-radius: 8px;
 }
