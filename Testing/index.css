@@ -23,7 +23,7 @@ nav {
     border-radius: 8px;
     display: flex;
     justify-content: center;
-    align-items: Top;
+    align-items: center;
 }
 
 nav a {
