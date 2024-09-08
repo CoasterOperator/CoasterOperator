@@ -23,8 +23,18 @@ function register() {
   password = document.getElementById("password").value
   username = document.getElementById("username").value
   firstname = document.getElementById("firstname").value
+  lastname = document.getElementById("lastname").value
 
-
+  // Validate input fields
+  if (Validate_Email(email) == false || validate_password(password) == false) {
+    alert('Email or password is not correct!')
+    return
+    // Dont keep running code
+  }
+  if (validate_field(firstname) == false || validate_field(lastname) == false || validate_field(username) == false) {
+    alert('One of the input feilds are invalid')
+    return
+  }
 }
 
 function Validate_Email(email) {
@@ -35,9 +45,25 @@ if (expression.test(email) == true) {
 } else {
   // Email is bad
   return false
-}
+  }
 }
 
 function validate_password(password) {
-  
+  if (password < 6 ) {
+    return false
+  } else {
+    return true
+  }
+}
+
+function validate_field(feild) {
+  if (feild == null) {
+    return false
+  }
+
+  if (feild.length <= 0) {
+    return false
+  } else {
+  return true
+  }
 }
