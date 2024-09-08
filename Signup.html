@@ -10,6 +10,13 @@
     <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdBoDkqAAAAAMkv9pe5qaQ8iN6YGvrXtVr1SYMf"></script>
   </head>
   <body>
+    
+    <script>
+      function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+      }
+    </script>
+
     <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js"></script>
