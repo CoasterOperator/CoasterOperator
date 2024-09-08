@@ -20,8 +20,8 @@ const database = firebase.database();
 
 function register() {
 email = document.getElementById('email').value
-Password = document.getElementById('email').value
-Username = document.getElementById('email').value
+password = document.getElementById('email').password
+username = document.getElementById('email').username
 }
 
 function Login() {
