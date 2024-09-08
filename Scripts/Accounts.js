@@ -11,7 +11,6 @@ const firebaseConfig = {
   measurementId: "G-0THBL04QM8",
 };
 
-
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
@@ -19,11 +18,9 @@ const auth = firebase.auth();
 const database = firebase.database();
 
 function register() {
-email = document.getElementById('email').value
-password = document.getElementById('email').password
-username = document.getElementById('email').username
+  email = document.getElementById("email").value;
+  password = document.getElementById("email").password;
+  username = document.getElementById("email").username;
 }
 
-function Login() {
-
-}
+function Login() {}
