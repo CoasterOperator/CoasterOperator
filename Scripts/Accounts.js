@@ -35,6 +35,24 @@ function register() {
     alert('One of the input feilds are invalid')
     return
   }
+  // Register user
+  auth.createUserWithEmailAndPassword(email,password)
+  .then(function() {
+
+    var user = auth.currentUser
+    alert('User created')
+
+    // Add user to database
+    
+
+  })
+  .catch(function(error) {
+    // Firebase will use this to alert any errors
+    var error_code = error.error_code
+    var error_message = error.message
+
+    alert(error_message)
+  })
 }
 
 function Validate_Email(email) {
