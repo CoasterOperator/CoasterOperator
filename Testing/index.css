@@ -20,6 +20,7 @@ nav {
   width: 585px;
   height: 55px;
   position: fixed;
+  top: 10px;
   background: #474747;
   border-radius: 8px;
   display: flex;
