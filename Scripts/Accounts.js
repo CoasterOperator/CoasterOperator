@@ -1,3 +1,4 @@
+const { FileEnumerator } = require("eslint/use-at-your-own-risk");
 const { default: firebase } = require("firebase/compat/app");
 
 const firebaseConfig = {
@@ -17,4 +18,12 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const database = firebase.database();
 
-function register() {}
+function register() {
+email = document.getElementById('email').value
+Password = document.getElementById('email').value
+Username = document.getElementById('email').value
+}
+
+function Login() {
+
+}
