@@ -10,7 +10,6 @@
     <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdBoDkqAAAAAMkv9pe5qaQ8iN6YGvrXtVr1SYMf"></script>
   </head>
   <body>
-
     <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js"></script>
@@ -42,6 +41,16 @@
         <p class="separator">
           <span>or</span>
         </p>
+        <!-- Email input box -->
+        <div class="input_box">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter email address"
+            required
+          />
+        </div>
         <!-- Username input box -->
         <div class="input_box">
           <label for="username">Username</label>
@@ -52,13 +61,23 @@
             required
           />
         </div>
-        <!-- Email input box -->
+        <!-- First Name input box -->
         <div class="input_box">
-          <label for="email">Email</label>
+          <label for="firstname">First Name</label>
           <input
-            type="email"
-            id="email"
-            placeholder="Enter email address"
+            type="text"
+            id="firstname"
+            placeholder="Enter First Name"
+            required
+          />
+        </div>
+        <!-- Last Name input box -->
+        <div class="input_box">
+          <label for="lastname">Last Name</label>
+          <input
+            type="text"
+            id="lastname"
+            placeholder="Enter Last Name"
             required
           />
         </div>
