@@ -19,19 +19,25 @@ const database = firebase.database();
 
 function register() {
   // Get all input feilds
-  email = document.getElementById("email").value;
-  password = document.getElementById("password").value;
-  username = document.getElementById("username").value;
-  firstname = document.getElementById("firstname").value;
+  email = document.getElementById("email").value
+  password = document.getElementById("password").value
+  username = document.getElementById("username").value
+  firstname = document.getElementById("firstname").value
+
+
 }
 
 function Validate_Email(email) {
-  expression = /^[^@]+@\w+(\.\w+)+\w$/;
-  if (expression.test(email) == true) {
-    // Email is good
-    return true;
-  } else {
-    // Email is bad
-    return false;
-  }
+expression = /^[^@]+@\w+(\.\w+)+\w$/
+if (expression.test(email) == true) {
+  // Email is good
+  return true
+} else {
+  // Email is bad
+  return false
+}
+}
+
+function validate_password(password) {
+  
 }
