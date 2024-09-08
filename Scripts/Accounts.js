@@ -42,8 +42,22 @@ function register() {
     var user = auth.currentUser
     alert('User created')
 
+    // Declare user variable
+    var user = auth.currentUser
+
     // Add user to database
-    
+    var database_ref = database.ref()
+
+    // Create user data
+    var user_data = {
+      email : email,
+      username : username,
+      firstname : firstname,
+      lastname : lastname,
+      last_login : Date.now()
+    }
+
+    database_ref.child('users/' + user.uid ).set(user.data)
 
   })
   .catch(function(error) {
