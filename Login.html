@@ -1,62 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coaster Operator</title>
-    <link rel="stylesheet" href="Css/Accounts.css" />
-    <link rel="script" href="Scripts/Accounts.js">
-    <link rel="icon" type="image/x-icon" href="Images/ProfileIcon.png">
-</head>
-<body>
+    <link rel="stylesheet" href="Css/Login.css" />
+    <link rel="script" href="Scripts/Accounts.js" />
+    <link rel="icon" type="image/x-icon" href="Images/ProfileIcon.png" />
+  </head>
+  <body>
     <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-database.js"></script>
 
     <script src="Scripts/Accounts.js"></script>
-    
+
     <div class="login_form">
-        <!-- Login form container -->
-        <form action="#">
-          <h3>Log in with</h3>
-          <div class="login_option">
-            <!-- Google button -->
-            <div class="option">
-              <a href="#">
-                <img src="Images/GoogleLogo.png" alt="Google" />
-                <span>Google</span>
-              </a>
-            </div>
-            <!-- Apple button -->
-            <div class="option">
-              <a href="#">
-                <img src="Images/AppleIcon.png" alt="Apple" />
-                <span>Apple</span>
-              </a>
-            </div>
+      <!-- Login form container -->
+      <form action="#">
+        <h3>Log in with</h3>
+        <div class="login_option">
+          <!-- Google button -->
+          <div class="option">
+            <a href="#">
+              <img src="Images/GoogleLogo.png" alt="Google" />
+              <span>Google</span>
+            </a>
           </div>
-          <!-- Login option separator -->
-          <p class="separator">
-            <span>or</span>
-          </p>
-          <!-- Email input box -->
-          <div class="input_box">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter email address" required />
+          <!-- Apple button -->
+          <div class="option">
+            <a href="#">
+              <img src="Images/AppleIcon.png" alt="Apple" />
+              <span>Apple</span>
+            </a>
           </div>
-          <!-- Paswwrod input box -->
-          <div class="input_box">
-            <div class="password_title">
-              <label for="password">Password</label>
-              <a href="#">Forgot Password?</a>
-            </div>
-            <input type="password" id="password" placeholder="Enter your password" required />
+        </div>
+        <!-- Login option separator -->
+        <p class="separator">
+          <span>or</span>
+        </p>
+        <!-- Email input box -->
+        <div class="input_box">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter email address"
+            required
+          />
+        </div>
+        <!-- Paswrod input box -->
+        <div class="input_box">
+          <div class="password_title">
+            <label for="password">Password</label>
+            <a href="#">Forgot Password?</a>
           </div>
-           <!-- Login button -->
-          <button type="submit">Log In</button>
-          <p class="sign_up">Don't have an account? <a href="#">Sign up</a></p>
-        </form>
-      </div>
-</body>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <!-- Login button -->
+        <button type="submit">Log In</button>
+        <p class="sign_up">
+          Don't have an account? <a href="Signup">Sign up</a>
+        </p>
+      </form>
+    </div>
+  </body>
 </html>
