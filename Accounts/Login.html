@@ -4,18 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coaster Operator</title>
-    <link rel="stylesheet" href="Css/Login.css" />
-    <link rel="script" href="Scripts/Accounts.js" />
-    <link rel="icon" type="image/x-icon" href="Images/ProfileIcon.png" />
+    <link rel="stylesheet" href="/Css/Login.css" />
+    <link rel="script" href="/Scripts/Accounts.js" />
+    <link rel="icon" type="image/x-icon" href="/Images/ProfileIcon.png" />
     <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdBoDkqAAAAAMkv9pe5qaQ8iN6YGvrXtVr1SYMf"></script>
   </head>
   <body>
-    
-    <script>
-      function onSubmit(token) {
-        document.getElementById("demo-form").submit();
-      }
-    </script>
 
     <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js"></script>
 
@@ -72,9 +66,10 @@
           />
         </div>
         <!-- Login button -->
-        <button type="submit">Log In</button>
+        <button onclick="Login()" type="submit">Log In</button>
         <p class="sign_up">
           Don't have an account? <a href="Signup">Sign up</a>
+          
         </p>
       </form>
     </div>
