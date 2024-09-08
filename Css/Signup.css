@@ -35,18 +35,18 @@ body {
   text-align: center;
 }
 
-.Signupform .login_option {
+.Signupform .Signup_option {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
-.Signup_form .login_option .option {
+.Signup_form .Signup_option .option {
   width: calc(100% / 2 - 12px);
 }
 
-.Signup_form .login_option .option a {
+.Signup_form .Signup_option .option a {
   height: 56px;
   display: flex;
   justify-content: center;
@@ -62,12 +62,12 @@ body {
   transition: 0.2s ease;
 }
 
-.Signup_form .login_option .option a:hover {
+.Signup_form .Signup_option .option a:hover {
   background: #ededf5;
   border-color: #626cd6;
 }
 
-.Signup_form .login_option .option a img {
+.Signup_form .Signup_option .option a img {
   max-width: 25px;
 }
 
