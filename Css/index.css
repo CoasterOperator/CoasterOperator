@@ -13,6 +13,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(#5b6363, #6f7979);
+  background-image: url("Images/Blurred.png");
 }
 
 nav {
