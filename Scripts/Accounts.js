@@ -18,9 +18,15 @@ const auth = firebase.auth();
 const database = firebase.database();
 
 function register() {
-  email = document.getElementById("email").value;
-  password = document.getElementById("email").password;
-  username = document.getElementById("email").username;
+  // Get all input feilds
+  email = document.getElementById("email").value
+  password = document.getElementById("email").value
+  username = document.getElementById("email").value
+  firstname = document.getElementById("firstname").value
+
+
 }
 
-function Login() {}
+function Validate_Email() {
+
+}
