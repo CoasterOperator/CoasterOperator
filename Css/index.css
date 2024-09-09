@@ -1,5 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: -80px;
+  height: 85px;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+header .Logo {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +39,12 @@ body {
   min-height: 100vh;
   background: linear-gradient(#5b6363, #6f7979);
   background-image: url("Images/Blurred.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
 
 nav {
   position: relative;
