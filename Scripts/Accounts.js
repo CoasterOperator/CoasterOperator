@@ -1,5 +1,5 @@
-//const { FileEnumerator } = require("eslint/use-at-your-own-risk");
-//const { default: firebase } = require("firebase/compat/app");
+const { FileEnumerator } = require("eslint/use-at-your-own-risk");
+const { default: firebase } = require("firebase/compat/app");
 
 const firebaseConfig = {
   apiKey: "AIzaSyBCOBG9DxKMA9pkWq1c-ANOAbKGHD4lPlg",
