@@ -1,4 +1,3 @@
-
 (function (global, factory) {
   typeof exports === "object" && typeof module !== "undefined"
     ? (module.exports = factory())
@@ -19,7 +18,6 @@
       const instanceMap = elementMap.get(element);
 
       if (!instanceMap.has(key) && instanceMap.size !== 0) {
-
         console.error(
           `Bootstrap doesn't allow more than one instance per element. Bound instance: ${Array.from(instanceMap.keys())[0]}.`,
         );
@@ -39,7 +37,6 @@
       }
       const instanceMap = elementMap.get(element);
       instanceMap.delete(key);
-
 
       if (instanceMap.size === 0) {
         elementMap.delete(element);
@@ -116,7 +113,6 @@
     return typeof object.nodeType !== "undefined";
   };
   const getElement = (object) => {
-
     if (isElement$1(object)) {
       return object.jquery ? object[0] : object;
     }
@@ -167,7 +163,6 @@
       return null;
     }
 
-
     if (typeof element.getRootNode === "function") {
       const root = element.getRootNode();
       return root instanceof ShadowRoot ? root : null;
@@ -175,7 +170,6 @@
     if (element instanceof ShadowRoot) {
       return element;
     }
-
 
     if (!element.parentNode) {
       return null;
@@ -204,7 +198,6 @@
   const DOMContentLoadedCallbacks = [];
   const onDOMContentLoaded = (callback) => {
     if (document.readyState === "loading") {
-
       if (!DOMContentLoadedCallbacks.length) {
         document.addEventListener("DOMContentLoaded", () => {
           for (const callback of DOMContentLoadedCallbacks) {
