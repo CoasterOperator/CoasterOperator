@@ -17,12 +17,34 @@ header {
 }
 
 header .Logo {
+  display: flex;
   color: #fff;
   font-weight: 700;
   text-decoration: none;
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.Welcome {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: none;
+  color: whitesmoke;
+  background: grey;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 50px;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+.Welcome:hover {
+  opacity: 0.6;
+  transform: translateX();
+  background-color: whitesmoke;
+  color: black;
 }
 
 * {
