@@ -12,7 +12,7 @@
   <p align="center">
     Coaster Operator Website has many features such as login signup and connect your roblox account and create fourms!
     <br />
-    <a href="https://github.com/CoasterOperator/CoasterOperator"><strong>Explore the docs »</strong></a>
+    <a href="https://coasteroperator.com"><strong>Explore the website »</strong></a>
     <br />
     <br />
     .
