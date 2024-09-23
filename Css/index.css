@@ -69,7 +69,7 @@ body {
 
 nav {
   position: relative;
-  width: 585px;
+  width: 675px;
   height: 55px;
   position: fixed;
   top: 10px;
@@ -108,25 +108,30 @@ nav a:nth-child(1):hover ~ span {
 
 nav a:nth-child(2):hover ~ span {
   left: 88px;
-  width: 85px;
+  width: 75px;
 }
 
 nav a:nth-child(3):hover ~ span {
-  left: 189px;
-  width: 90px;
+  left: 176px;
+  width: 85px;
 }
 
 nav a:nth-child(4):hover ~ span {
-  left: 295px;
+  left: 278px;
   width: 90px;
 }
 
 nav a:nth-child(5):hover ~ span {
-  left: 396px;
+  left: 387px;
   width: 85px;
 }
 
 nav a:nth-child(6):hover ~ span {
-  left: 495px;
-  width: 90px;
+  left: 487px;
+  width: 83px;
+}
+
+nav a:nth-child(7):hover ~ span {
+  left: 587px;
+  width: 87px;
 }
