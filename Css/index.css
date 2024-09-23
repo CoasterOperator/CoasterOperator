@@ -151,7 +151,7 @@ nav a:nth-child(7):hover ~ span {
 .avatar {
   vertical-align: middle;
   width: 50px;
-  height: 50px;
+  height: 30px;
   border-radius: 50%;
 }
 
