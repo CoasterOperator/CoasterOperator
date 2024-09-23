@@ -42,11 +42,11 @@
   window.addEventListener('load', async function () {
     await Clerk.load()
 
-    const userbuttonDiv = document.getElementById('user-button')
+    const userbuttonDiv = document.getElementById('Avatar')
 
     Clerk.mountUserButton(userbuttonDiv)
-    const element = document.getElementById("Avatar");
-    element.remove();
+    //const element = document.getElementById("Avatar");
+    //element.remove();
   })
 </script>
 
