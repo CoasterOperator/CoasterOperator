@@ -24,9 +24,9 @@
 
     <a
       href="https://www.roblox.com/games/17152219682/Coaster-Operator"
-      target="_blank"
+     target="_blank"
       ><button>Visit Coaster Operator</button></a
-    >
+   >
 
 <script
   async
@@ -40,14 +40,17 @@
   window.addEventListener('load', async function () {
     await Clerk.load()
 
+    if (Clerk.user) {
       document.getElementById('app').innerHTML = `
         <div id="user-button"></div>
       `
-
       const userButtonDiv = document.getElementById('user-button')
-
       Clerk.mountUserButton(userButtonDiv)
 
+    } else {
+
+
+    }
   })
 </script>
 
