@@ -1,6 +1,14 @@
 {
-  "dependencies": {
-    "@clerk/clerk-js": "^5.22.3",
-    "@clerk/themes": "^2.1.30"
+  "name": "clerk-javascript",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.1"
   }
 }
