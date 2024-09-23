@@ -1,4 +1,3 @@
-
 import { Clerk } from "@clerk/clerk-js";
 
 const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
@@ -11,8 +10,7 @@ if (clerk.user) {
     <div id="user-button"></div>
   `;
 
-  const userButtonDiv =
-    document.getElementById("user-button");
+  const userButtonDiv = document.getElementById("user-button");
 
   clerk.mountUserButton(userButtonDiv);
 } else {
@@ -20,8 +18,7 @@ if (clerk.user) {
     <div id="sign-in"></div>
   `;
 
-  const signInDiv =
-    document.getElementById("sign-in");
+  const signInDiv = document.getElementById("sign-in");
 
   clerk.mountSignIn(signInDiv);
 }
