@@ -43,9 +43,10 @@
     await Clerk.load()
 
     const userbuttonDiv = document.getElementById('user-button')
+
+    Clerk.mountUserButton(userbuttonDiv)
     const element = document.getElementById("Avatar");
     element.remove();
-    Clerk.mountUserButton(userbuttonDiv)
   })
 </script>
 
