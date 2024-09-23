@@ -42,8 +42,8 @@
   window.addEventListener('load', async function () {
     await Clerk.load()
 
-    const userbuttonDiv = document.getElementById('user-button')
-    const element = document.getElementById("demo");
+    const userbuttonDiv = document.getElementById('avatar')
+    const element = document.getElementById("avatar");
     element.remove();
     Clerk.mountUserButton(userbuttonDiv)
   })
