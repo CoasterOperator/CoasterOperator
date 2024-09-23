@@ -42,11 +42,23 @@
   window.addEventListener('load', async function () {
     await Clerk.load()
 
-    const userbuttonDiv = document.getElementById('user-button')
+    if (Clerk.user) {
+      document.getElementById('app').innerHTML = `
+        <div id="user-button"></div>
+      `
 
-    Clerk.mountUserButton(userbuttonDiv)
-    //const element = document.getElementById("Avatar");
-    //element.remove();
+      const userButtonDiv = document.getElementById('user-button')
+
+      Clerk.mountUserButton(userButtonDiv)
+    } else {
+      document.getElementById('app').innerHTML = `
+        <div id="sign-in"></div>
+      `
+
+      const signInDiv = document.getElementById('sign-in')
+
+      Clerk.mountSignIn(signInDiv)
+    }
   })
 </script>
 
