@@ -2,6 +2,7 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
+const clerkPubKey = pk_test_Y3VkZGx5LWh1bXBiYWNrLTg1LmNsZXJrLmFjY291bnRzLmRldiQ;
 
 document.querySelector('#app').innerHTML = `
   <div>
