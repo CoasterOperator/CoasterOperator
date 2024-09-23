@@ -15,6 +15,5 @@
     <a href="https://coasteroperator.com"><strong>Explore the website »</strong></a>
     <br />
     <br />
-    .
   </p>
 </div>
