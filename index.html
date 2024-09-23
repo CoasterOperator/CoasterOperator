@@ -43,7 +43,8 @@
     await Clerk.load()
 
     const userbuttonDiv = document.getElementById('user-button')
-
+    const element = document.getElementById("demo");
+    element.remove();
     Clerk.mountUserButton(userbuttonDiv)
   })
 </script>
