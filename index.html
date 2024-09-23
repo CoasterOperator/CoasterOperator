@@ -21,7 +21,7 @@
       <a href="/Updates">Updates</a>
       <span></span>
       <div id="user-button"></div>
-      <img src="/Images/DefaultProfileIcon.png" alt="Avatar" class="avatar" />
+      <img src="/Images/DefaultProfileIcon.png" alt="Avatar" id="Avatar" class="Avatar" />
     </nav>
 
     <a
@@ -42,8 +42,8 @@
   window.addEventListener('load', async function () {
     await Clerk.load()
 
-    const userbuttonDiv = document.getElementById('avatar')
-    const element = document.getElementById("avatar");
+    const userbuttonDiv = document.getElementById('Avatar')
+    const element = document.getElementById("Avatar");
     element.remove();
     Clerk.mountUserButton(userbuttonDiv)
   })
