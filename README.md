@@ -1,6 +1,5 @@
 <a id="readme-top"></a>
 
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/CoasterOperator/CoasterOperator">
