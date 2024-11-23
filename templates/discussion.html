@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion - {{ discussion.title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .discussion-meta {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .message {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .message-author {
+            font-weight: bold;
+            color: #333;
+        }
+        .message-timestamp {
+            font-size: 0.8em;
+            color: #999;
+        }
+        .message-content {
+            margin-top: 5px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{{ discussion.title }}</h1>
+        <p class="discussion-meta">
+            Created by: {{ discussion.created_by }}
+        </p>
+        <a class="btn" href="/">Back to Home</a>
+    </header>
+
+    <main>
+        <h2>Messages</h2>
+        {% if discussion.messages %}
+            <div>
+                {% for message in discussion.messages %}
+                    <div class="message">
+                        <p class="message-author">{{ message.user }}</p>
+                        <p class="message-timestamp">{{ message.timestamp }}</p>
+                        <p class="message-content">{{ message.message }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>No messages yet. Be the first to post!</p>
+        {% endif %}
+
+        {% if user %}
+            <form method="POST" action="/discussion/{{ category }}/{{ discussion_id }}">
+                <textarea name="message" placeholder="Write your message here..." required></textarea>
+                <button class="btn" type="submit">Post Message</button>
+            </form>
+        {% else %}
+            <p>You must <a href="/login">log in</a> to post a message.</p>
+        {% endif %}
+    </main>
+</body>
+</html>

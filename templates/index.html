@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+        :root {
+            --primary-color: #007bff;
+            --primary-hover: #0056b3;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: var(--card-bg);
+            box-shadow: var(--shadow);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .navbar button {
+            padding: 10px 20px;
+            font-size: 14px;
+            color: white;
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar button:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .category {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        .category-title {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            color: var(--primary-color);
+        }
+
+        .discussion {
+            margin: 10px 0;
+            padding: 10px 15px;
+            background-color: var(--bg-color);
+            border-radius: 5px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+    .discussion:hover {
+            transform: translateX(10px);
+            background-color: #f4f4f4;
+    }
+
+    .discussion a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+    }
+
+    .discussion div {
+            font-size: 0.9em;
+            color: gray;
+     }
+
+    .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: var(--card-bg);
+            border-top: 1px solid var(--border-color);
+            color: gray;
+            font-size: 0.9em;
+    }
+
+    .like-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #1e90ff;
+    color: white;
+    padding: 4px 10px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.like-button:hover {
+    background-color: #007bff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.like-button:active {
+    transform: scale(0.95);
+}
+
+.like-button i {
+    margin-right: 8px;
+    font-size: 1.5em;
+}
+
+.like-count {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.like-button:disabled {
+    background-color: #e1e1e1;
+    cursor: not-allowed;
+}
+
+.like-button:disabled i, .like-button:disabled .like-count {
+    color: #aaa;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <a href="/create_discussion"><button>Create Discussion</button></a>
+        </div>
+        <div class="buttons">
+
+                <span>Logged in as <strong>{{ user }}</strong></span>
+                <a href="/logout"><button>Logout</button></a>
+
+                <a href="/login"><button>Login</button></a>
+                <a href="/register"><button>Register</button></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <h1>Coaster Operator Forums</h1>
+            </div>
+                <div class="category">
+                    <div class="category-title">ride-suggestions</div>
+                        <div class="discussion">
+                            <a href="/discussion/{{ category }}/{{ loop.index0 }}">Guidelines And Information</a>
+                            <div>Created by: Coaster Operator</div>
+                            <div class="like-container">
+                                <span class="like-count">2 Likes</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="category">
+                    <div class="category-title">Game-suggestions</div>
+                        <div class="discussion">
+                            <a href="/discussion/{{ category }}/{{ loop.index0 }}">Guidelines And Information</a>
+                            <div>Created by: Coaster Operator</div>
+                            <div class="like-container">
+                                <span class="like-count">2 Likes</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Coaster Operator. All rights reserved.</p>
+    </div>
+</body>
+</html>
