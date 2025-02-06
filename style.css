@@ -133,65 +133,6 @@ nav ul li a {
     overflow: hidden;
     text-align: left;
     transition: transform 0.3s ease-in-out;
-    padding-bottom: 15px;
-}
-
-.blog-card:hover {
-    transform: scale(1.05);
-}
-
-/* Profile Photo on Top of Image */
-.profile-photo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid white;
-    z-index: 1;
-}
-
-.profile-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Blog Section */
-#blog {
-    text-align: center;
-    padding: 50px;
-}
-
-.search-bar {
-    margin-bottom: 20px;
-}
-
-#search-input {
-    width: 300px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #444;
-    background-color: #222;
-    color: white;
-}
-
-/* Blog Cards */
-.blog-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-}
-
-.blog-card {
-    background: #222;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: left;
-    transition: transform 0.3s ease-in-out;
 }
 
 .blog-card:hover {
@@ -204,36 +145,39 @@ nav ul li a {
     overflow: hidden;
 }
 
-/* Profile Photo on Blog Image */
-.profile-photo {
+/* Profile Photo and Author Name Container */
+.profile-photo-container {
     position: absolute;
     top: 10px;
     left: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60px;
 }
 
-.profile-photo img {
+.profile-photo {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center;
     border: 2px solid white;
     transition: transform 0.3s ease-in-out;
 }
 
 .username {
+    margin-top: 5px;
     font-size: 12px;
     color: white;
-    margin-top: 5px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2px 6px;
+    border-radius: 3px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
 }
 
-/* Blog Image Hover Effect */
-.blog-image-container:hover .profile-photo img {
+/* Hover Effect on Profile Photo */
+.blog-image-container:hover .profile-photo {
     transform: scale(1.2);
 }
 
