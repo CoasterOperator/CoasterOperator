@@ -145,27 +145,31 @@ nav ul li a {
     overflow: hidden;
 }
 
-/* Profile Photo and Author Name Container */
+/* Profile Photo Container */
 .profile-photo-container {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 5px;
+    left: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 5px;
+    z-index: 2;
 }
 
+/* Profile Photo */
 .profile-photo {
-    width: 60px;
-    height: 60px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
     border: 2px solid white;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.1s ease-in-out;
 }
 
+/* Author Name Styling */
 .username {
-    margin-top: 5px;
     font-size: 12px;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
@@ -173,14 +177,10 @@ nav ul li a {
     border-radius: 3px;
     text-align: center;
     white-space: nowrap;
-    z-index: 2;
+    margin-top: 2px;
 }
 
-/* Hover Effect on Profile Photo */
-.blog-image-container:hover .profile-photo {
-    transform: scale(1.2);
-}
-
+/* Blog Image */
 .blog-card img {
     width: 100%;
     height: 200px;
@@ -240,3 +240,73 @@ nav ul li a {
 .social-icon:hover {
     transform: scale(1.2);
 }
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .location {
+    margin-right: 40px;
+  }
+  
+  .location h3 {
+    margin-bottom: 10px;
+  }
+  
+  .location p {
+    margin: 11px 0;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .newsletter {
+    text-align: center;
+    align-self: center;
+  }
+  
+  .newsletter .btn-signup {
+    background-color: #FF6347;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .newsletter .btn-signup:hover {
+    background-color: #FF4500;
+  }
+  
+  .social {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social a {
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
