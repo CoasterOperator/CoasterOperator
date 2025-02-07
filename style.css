@@ -310,3 +310,77 @@ nav ul li a {
     text-decoration: none;
   }
   
+/* Cookies Policy Section */
+#cookies-policy {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #222;
+    color: white;
+    border-radius: 8px;
+}
+
+#cookies-policy h1, h2, h3 {
+    color: #ff6600;
+}
+
+#cookies-policy h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#cookies-policy h2 {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+#cookies-policy h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#cookies-policy p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Cookie Section Box */
+.cookie-section {
+    background: #333;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Footer (Same as other pages) */
+.bottom-bar {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-bar p {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #ff6600;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
