@@ -384,3 +384,95 @@ nav ul li a {
 .social-icon:hover {
     transform: scale(1.2);
 }
+
+/* About Us Section Styling */
+#about-intro {
+    padding: 50px;
+    text-align: center;
+    color: white;
+    background-color: #222;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+#about-intro h1 {
+    font-size: 36px;
+    color: #ff6600;
+}
+
+#about-intro p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+/* Our Mission and Vision Sections */
+#our-mission, #company-vision {
+    padding: 40px;
+    text-align: center;
+    background-color: #333;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#our-mission h2, #company-vision h2 {
+    color: #ff6600;
+    font-size: 28px;
+}
+
+#our-mission p, #company-vision p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.8;
+}
+
+/* Team Section */
+#team {
+    padding: 50px;
+    text-align: center;
+    background-color: #222;
+}
+
+#team h2 {
+    color: #ff6600;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.team-member {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ff6600;
+}
+
+.team-member h3 {
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.team-member p {
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 5px;
+}
