@@ -476,3 +476,115 @@ nav ul li a {
     font-size: 14px;
     margin-top: 5px;
 }
+
+/* Careers Section */
+#careers {
+    padding: 50px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#careers h1 {
+    font-size: 36px;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+#careers p {
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Job Listings Grid */
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px; /* Increased gap to prevent collisions */
+    justify-items: center;
+    padding: 20px;
+}
+
+/* Job Card Design */
+.job-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.job-card:hover {
+    transform: scale(1.05);
+}
+
+.job-card h2 {
+    font-size: 22px;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 8px;
+}
+
+.job-card strong {
+    color: #ff6600;
+}
+
+/* Apply Now Button */
+.apply-btn {
+    display: inline-block;
+    background-color: #ff6600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.apply-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Footer (Same as other pages) */
+.bottom-bar {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-bar p {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #ff6600;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
